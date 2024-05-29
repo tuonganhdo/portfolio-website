@@ -67,14 +67,8 @@ card-link {
   line-height: normal;
 }
 
-h2 {
-  color: rgb(var(--foreground-rgb));
-  font-size: 40px;
-  font-weight: bold;
-}
-
 a.anh-do:hover {
-  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 9"%3E %3Cpath fill="none" width="153" height="9" d="M3 6L8.61759 2.90357C9.62081 2.35059 10.8514 2.41719 11.789 3.07521L15.7853 5.87957C16.7561 6.56085 18.0372 6.60622 19.0538 5.99531L22.5956 3.86693C23.4917 3.32846 24.6034 3.29528 25.53 3.77937L30.3054 6.27424C31.1757 6.72892 32.2134 6.72892 33.0837 6.27424L37.9617 3.72576C38.832 3.27108 39.8697 3.27108 40.7401 3.72576L45.4493 6.1861C46.4114 6.68874 47.57 6.63246 48.4789 6.03893L53.0987 3.0219C54.0566 2.39636 55.2868 2.37006 56.2706 2.95408L61.6185 6.12906C62.5281 6.66908 63.6548 6.69014 64.584 6.18448L70.6991 2.85659C71.6685 2.32901 72.8493 2.37635 73.7734 2.97984L78.4844 6.05638C79.379 6.64058 80.5168 6.70493 81.4715 6.22532L88.2515 2.8194C89.2534 2.31606 90.4525 2.41351 91.36 3.07204L95.2406 5.88789C96.1769 6.56728 97.4205 6.6478 98.4366 6.09483L104.527 2.78042C105.421 2.29384 106.501 2.29383 107.395 2.78042L113.485 6.09483C114.501 6.6478 115.745 6.56728 116.681 5.88789L119.876 3.5695C121.109 2.6749 122.817 2.84623 123.847 3.96793L124.986 5.20718C125.946 6.25201 127.506 6.48145 128.726 5.75713L133.448 2.95408C134.432 2.37006 135.662 2.39636 136.62 3.0219L141.285 6.06844C142.169 6.64615 143.293 6.71593 144.242 6.25214L150.899 3" stroke="%239EDDF8" stroke-width="3" stroke-linecap="square"/%3E%3C/svg%3E'), url('/anh-do-hover.png');
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 9"%3E %3Cpath fill="none" width="153" height="9" d="M3 6L8.61759 2.90357C9.62081 2.35059 10.8514 2.41719 11.789 3.07521L15.7853 5.87957C16.7561 6.56085 18.0372 6.60622 19.0538 5.99531L22.5956 3.86693C23.4917 3.32846 24.6034 3.29528 25.53 3.77937L30.3054 6.27424C31.1757 6.72892 32.2134 6.72892 33.0837 6.27424L37.9617 3.72576C38.832 3.27108 39.8697 3.27108 40.7401 3.72576L45.4493 6.1861C46.4114 6.68874 47.57 6.63246 48.4789 6.03893L53.0987 3.0219C54.0566 2.39636 55.2868 2.37006 56.2706 2.95408L61.6185 6.12906C62.5281 6.66908 63.6548 6.69014 64.584 6.18448L70.6991 2.85659C71.6685 2.32901 72.8493 2.37635 73.7734 2.97984L78.4844 6.05638C79.379 6.64058 80.5168 6.70493 81.4715 6.22532L88.2515 2.8194C89.2534 2.31606 90.4525 2.41351 91.36 3.07204L95.2406 5.88789C96.1769 6.56728 97.4205 6.6478 98.4366 6.09483L104.527 2.78042C105.421 2.29384 106.501 2.29383 107.395 2.78042L113.485 6.09483C114.501 6.6478 115.745 6.56728 116.681 5.88789L119.876 3.5695C121.109 2.6749 122.817 2.84623 123.847 3.96793L124.986 5.20718C125.946 6.25201 127.506 6.48145 128.726 5.75713L133.448 2.95408C134.432 2.37006 135.662 2.39636 136.62 3.0219L141.285 6.06844C142.169 6.64615 143.293 6.71593 144.242 6.25214L150.899 3" stroke="%239EDDF8" stroke-width="3" stroke-linecap="square"/%3E%3C/svg%3E'), url('/start/anh-do-hover.png');
   background-repeat: no-repeat, no-repeat;
   background-size: 150px auto, 278px 138px;
   background-position: left bottom, right top;
@@ -88,6 +82,59 @@ a.anh-do:hover {
   margin-top: -145px;
   margin-right: -180px;
   margin-left: -3px;
+}
+
+a.uiuc:hover {
+  background-image: url('/start/uiuc-under.svg'), url('/start/uiuc-hover.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+  background-position: center bottom, left 70% top;
+
+  padding-top: 75px;
+  padding-bottom: 3px;
+
+  margin-top: -75px;
+  margin-bottom: -3px;
+}
+
+a.things:hover {
+  background-image: url('/start/things-under.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center bottom;
+
+  padding-bottom: 3px;
+  margin-bottom: -3px;
+}
+
+a.action:hover {
+  background-image: url('/start/action-under.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center bottom;
+
+  padding-bottom: 3px;
+  margin-bottom: -3px;
+}
+
+a.isd:hover {
+  background-image: url('/start/isd-under.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center bottom;
+
+  padding-bottom: 3px;
+  margin-bottom: -3px;
+}
+
+a.pc:hover {
+  background-image: url('/start/pc-under.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center bottom;
+
+  padding-bottom: 3px;
+  margin-bottom: -3px;
 }
 
 @layer utilities {
