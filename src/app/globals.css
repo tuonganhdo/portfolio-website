@@ -141,8 +141,26 @@ div.fade-in {
   opacity: 0.5;
 }
 
-nav-icon:hover {
+.nav-button {
+  opacity: 1;
+}
+
+.nav-button:hover .nav-icon {
   fill-opacity: 0.4;
+}
+
+.nav-button:active .nav-icon {
+  fill-opacity: 1;
+}
+
+.nav-button .nav-icon {
+  fill: '#1E1E1E';
+  fill-opacity: 0.17;
+}
+
+.nav-button .nav-icon-chosen {
+  fill: '#1E1E1E';
+  fill-opacity: 1;
 }
 
 @keyframes fadeIn {
