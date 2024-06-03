@@ -13,9 +13,17 @@ export default function Start() {
     }
     const router = useRouter()
 
+    function showNavbar() {
+        document.getElementById("start-navbar").id = "start-navbar-show";
+    }
+
     return(
         <main className="flex h-screen items-center place-items-center justify-center antialiased">
             <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+            <div id="start-navbar">
+                <Navbar page="about"/>
+            </div>
 
             {/* Text block */}
             <div className = "flex flex-auto relative place-items-center flex-col items-center h-fit font-normal">
@@ -49,7 +57,9 @@ export default function Start() {
                             .typeString('I like building <strong>things</strong> and try to make them accessible and human-centered.<br/><br/>')
                             .pauseFor(100)
                             .typeString('I\'m currently doing research in the <strong>ACTION Lab</strong>, developing a mobile app for <strong>Illinois Solar Decathlon</strong>, and serving as <strong>Project: Code</strong>\'s president.')
-                            .pauseFor(1000)
+                            .pauseFor(500)
+                            .callFunction(() => showNavbar())
+                            .pauseFor(500)
                             .callFunction(() => { router.replace('/about'); })
                             .start();
                         }}
