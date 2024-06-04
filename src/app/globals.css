@@ -14,6 +14,14 @@
   --pink: 251, 201, 221;
   --orange: 255, 216, 170;
   --purple: 224, 204, 255;
+
+  --text-dialogue: 12px;
+  --text-subsm: 14px;;
+  --text-sub: 16px;
+  --text-sublg: 18px;
+  --text-default: 20px;
+  --text-subheader: 40px;
+  --text-header: 50px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -43,28 +51,6 @@ card {
   align-items: flex-start;
   gap: 18px;
   flex-shrink: 0;
-}
-
-card-pill {
-  background: rgb(var(--secondary-2));
-  color: rgb(var(--foreground-rgb));
-  display: flex;
-  padding: 5px var(--xs, 12px);
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-card-link {
-  color: rgb(var(--secondary-4));
-  text-align: center;
-  font-family: Inter;
-  font-size: var(--sm, 14px);
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
 }
 
 a.anh-do:hover {
@@ -159,20 +145,15 @@ a.pc:hover {
   fill-opacity: 1;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 #fade-in {
   opacity: 0;
-  animation: fadeIn 0.15s;
+  animation: fadeIn 0.2s;
   animation-timing-function: ease-in;
-  animation-delay: 7.7s;
+  animation-delay: 7s;
   animation-fill-mode: forwards;
 }
 
-p.fade-up {
+/* p.fade-up {
   opacity: 0;
   animation: slideFadeIn 0.4s;
   animation-timing-function: ease-in;
@@ -180,25 +161,79 @@ p.fade-up {
 }
 
 #p1 {
-  animation-delay: 1s;
+  animation-delay: 1.8s;
 }
 
 #p2 {
-  animation-delay: 2.1s;
+  animation-delay: 2.9s;
 }
 
 #p3 {
-  animation-delay: 3.2s;
-}
+  animation-delay: 4s;
+} */
 
 @keyframes slideFadeIn {
   from {
     opacity: 0;
-    transform: translateY(25px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.pages-menu {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  
+  div {
+    display: flex;
+    flex: 1 1 auto;
+    position: static;
+    justify-content: left;
+    place-items: center;
+    flex-direction: row;
+    width: fit-content;
+    margin-bottom: 20px;
+
+    opacity: 0;
+    animation: slideFadeIn;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+  
+    svg {
+      margin-right: 36px;
+      transition: transform 0.2s;
+      width: 38px;
+      height: 38px;
+    }
+  
+    a {
+      font-size: var(--text-header);
+      font-weight: bold;
+    }
+  }
+
+  div:nth-child(2) { animation-delay: 0.1s; }
+
+  div:nth-child(3) { animation-delay: 0.2s; }
+
+  div:last-child {
+    margin-bottom: 0px;
+    animation-delay: 0.3s;
+  }
+
+  div:hover {
+    svg { transition: transform 0.1s; }
+    #up { transform: translateY(-10px); }
+    #down { transform: translateY(10px); }
+    #left { transform: translateX(-10px); }
+    #right { transform: translateX(10px); }
   }
 }
 

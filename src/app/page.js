@@ -12,6 +12,8 @@ export default function Start() {
         return str.split(/(?= )/);
     }
     const router = useRouter()
+    router.prefetch('/about')
+    router.replace('/about')
 
     return(
         <main className="flex h-screen items-center place-items-center justify-center antialiased">
@@ -20,7 +22,7 @@ export default function Start() {
             {/* Text block */}
             <div className = "flex flex-auto relative place-items-center flex-col items-center h-fit font-normal">
                 {/* "Hi, ...." block */}
-                <div className="relative place-items-center text-left w-1/2">
+                <div className="relative flex-row place-items-center text-left w-1/2">
                     <Typewriter 
                         onInit={(typewriter) => {
                             typewriter

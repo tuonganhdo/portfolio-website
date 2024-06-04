@@ -2,17 +2,32 @@
 
 import React, { useState } from "react";
 import Navbar from "@/app/navbar";
+import Typewriter from 'typewriter-effect';
 
 export default function About() {
     return(
         <main className="flex h-screen items-center place-items-center justify-center antialiased">
-            <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
             {/* Text block */}
             <div className = "flex flex-auto relative place-items-center flex-col h-fit space-y-0">
                 {/* "Hi, ...." block */}
-                <p className="text-subheader font-bold overflow-visible text-left w-1/2 animate-[slideFadeIn_0.4s_ease-in_forwards]">Hi,  I'm <a class="anh-do">Anh Do</a></p>
-
+                <div className="relative place-items-center text-left w-1/2 min-h-[60px]">
+                    <Typewriter
+                        onInit={(typewriter) => {
+                            typewriter
+                            .typeString('Hi,')
+                            .pauseFor(500)
+                            .typeString(' I\'m Anh Do')
+                            .start();
+                        }}
+                        options={{
+                            delay: 20,
+                            wrapperClassName: "text-subheader font-bold antialiased min-h-[49px]",
+                            cursorClassName: "opacity-0",
+                        }}
+                        />
+                </div>
+                {/* <p className="text-subheader font-bold overflow-visible text-left w-1/2">Hi,  I'm <a class="anh-do">Anh Do</a></p> */}
+                {/* animate-[slideFadeIn_0.4s_ease-in_forwards] */}
                 {/* Bio block */}
                 <div className="relative place-items-center text-left w-1/2">
                     <div className="relative text-default">
