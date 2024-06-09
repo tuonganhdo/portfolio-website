@@ -58,7 +58,7 @@ export default function Navbar({ page }) {
                     </svg>
                 </button>
 
-                <button onClick={() => {router.push('#')}} class="nav-button">
+                <button onClick={() => {router.push('/resume-anh-do.pdf')}} class="nav-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="nav-icon">
                         <path class="icon" d="M10 0H1.5V16H14.5V4.5L10 0Z"/>
                     </svg>
