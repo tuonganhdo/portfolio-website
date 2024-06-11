@@ -11,7 +11,7 @@ module.exports = {
       'subsm': '14px',
       'sub': '16px',
       'sublg': '18px',
-      'default': '20px',
+      'default': '22px',
       'subheader': '40px',
       'header': '56px',
     },

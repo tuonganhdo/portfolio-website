@@ -9,6 +9,7 @@
   --secondary-2: 30, 30, 30, 0.06;
   --secondary-3: 30, 30, 30, 0.17;
   --secondary-4: 30, 30, 30, 0.4;
+
   --blue: 158, 221, 248;
   --green: 173, 236, 151;
   --pink: 251, 201, 221;
@@ -36,7 +37,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--secondary-4));
   background: rgb(var(--background-rgb));
 }
 
@@ -237,27 +238,50 @@ a.pc:hover {
   }
 }
 
-h1 {
+h1#greeting {
   margin: 0;
   letter-spacing: -1px;
-}
-
-span{
-  display: inline-block;
-  overflow: hidden;
-  animation: .3s swift-up ease-in-out forwards;	
-}
-
-i{
+  font-weight: bold;
+  height: 54px;
   font-style: normal;
-  position: relative;
-  animation: .5s swift-up ease-in-out forwards;
+  overflow: hidden;
+  width: fit-content;
+
+  span{
+    display: inline-block;
+    overflow: hidden;
+    animation: swiftUp .4s ease-in-out forwards;	
+    height: 54px;
+    top: 100%;
+    
+    position: relative;
+    /* animation: swiftUp .4s ease-in-out forwards; */
+    font-style: normal;
+  }
+
+  span:nth-child(2) {
+    animation-delay: .1s;
+  }
+
+  span:nth-child(3) {
+    animation-delay: .2s;
+  }
 }
 
-@keyframes swift-up {
-  to {
-    top: 0;
-  }
+i {
+  color: rgb(var(--foreground-rgb));
+  font-style: normal;
+}
+
+@keyframes swiftUp {
+  from { top: 100%; }
+  to { top: 0; }
+}
+
+@keyframes swiftDownUp {
+  0% { padding-top: 0; }
+  50% { padding-top: 70%; }
+  100% { padding-top: 0; }
 }
 
 @layer utilities {

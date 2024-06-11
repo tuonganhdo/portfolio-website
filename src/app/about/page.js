@@ -5,31 +5,17 @@ import Navbar from "@/app/navbar";
 import Typewriter from 'typewriter-effect';
 
 export default function About() {
-    const greetings = ["Hi! 👋", "Hey there! 👋", "Howdy 🤠", "Hey! 👋"]
+    const greetings = ["Hi! 👋", "Hey there! 👋", "Howdy 🤠"]
+    var greeting = 0;
     
     function chooseGreeting() {
-        var num = Math.floor(Math.random() * greetings.length);
-        document.getElementById("greeting").innerHTML = greetings[num];
+        greeting = (greeting + 1) % greetings.length;
+        
+        var words = greetings[greeting].split(' ');
+        words.forEach((el, index) => { words[index] = `<span id='greeting-word'>${words[index]}</span>`; });
+
+        document.getElementById("greeting").innerHTML = words.join(' ');
     }
-    
-    
-    const swiftUpElements = document.querySelectorAll('#greeting');
-    swiftUpElements.forEach(elem => {
-        const words = elem.textContent.split(' ');
-        elem.innerHTML = '';
-
-        words.forEach((el, index) => {
-            words[index] = `<span><i>${words[index]}</i></span>`;
-        });
-
-        elem.innerHTML = words.join(' ');
-
-        const children = document.querySelectorAll('span > i');
-        children.forEach((node, index) => {
-            node.style.animationDelay = `${index * .2}s`;
-        });
-
-    });
 
     return(
         // <main className="flex h-screen items-center place-items-center justify-center antialiased">
@@ -58,24 +44,24 @@ export default function About() {
         //         <div className="relative place-items-center text-left w-1/2">
         //             <div className="relative text-default">
         //                 {/* <p id="slide-fade-in"><br/>
-        //                     I'm a student at the <strong><a class="uiuc">University of Illinois Urbana-Champaign</a></strong> majoring in Computer Science and minoring in Statistics.
+        //                     I'm a student at the <i><a class="uiuc">University of Illinois Urbana-Champaign</a></i> majoring in Computer Science and minoring in Statistics.
         //                     <br/><br/>
-        //                     I like building <strong><a class="things" href="/projects">things</a></strong> and try to make them accessible and human-centered.
+        //                     I like building <i><a class="things" href="/projects">things</a></i> and try to make them accessible and human-centered.
         //                     <br/><br/>
-        //                     I'm currently doing research in the <strong><a class="action" href="https://jessiechinlab.ischool.illinois.edu">ACTION Lab</a></strong>, developing a mobile app for <strong><a class="isd" href="https://www.illinoissolardecathlon.com">Illinois Solar Decathlon</a></strong>, and serving as <strong><a class="pc" href="https://www.projectcodeuiuc.org">Project: Code</a></strong>'s president.
+        //                     I'm currently doing research in the <i><a class="action" href="https://jessiechinlab.ischool.illinois.edu">ACTION Lab</a></i>, developing a mobile app for <i><a class="isd" href="https://www.illinoissolardecathlon.com">Illinois Solar Decathlon</a></i>, and serving as <i><a class="pc" href="https://www.projectcodeuiuc.org">Project: Code</a></i>'s president.
         //                     <br/>
         //                 </p> */}
         //                 <p class="fade-up" id="p1">
         //                     <br/>
-        //                     I'm a student at the <strong><a class="uiuc">University of Illinois Urbana-Champaign</a></strong> majoring in Computer Science and minoring in Statistics.
+        //                     I'm a student at the <i><a class="uiuc">University of Illinois Urbana-Champaign</a></i> majoring in Computer Science and minoring in Statistics.
         //                 </p>
         //                 <p class="fade-up" id="p2">
         //                     <br/>
-        //                     I like building <strong><a class="things" href="/projects">things</a></strong> and try to make them accessible and human-centered.
+        //                     I like building <i><a class="things" href="/projects">things</a></i> and try to make them accessible and human-centered.
         //                 </p>
         //                 <p class="fade-up" id="p3">
         //                     <br/>
-        //                     I'm currently doing research in the <strong><a class="action" href="https://jessiechinlab.ischool.illinois.edu">ACTION Lab</a></strong>, developing a mobile app for <strong><a class="isd" href="https://www.illinoissolardecathlon.com">Illinois Solar Decathlon</a></strong>, and serving as <strong><a class="pc" href="https://www.projectcodeuiuc.org">Project: Code</a></strong>'s president.
+        //                     I'm currently doing research in the <i><a class="action" href="https://jessiechinlab.ischool.illinois.edu">ACTION Lab</a></i>, developing a mobile app for <i><a class="isd" href="https://www.illinoissolardecathlon.com">Illinois Solar Decathlon</a></i>, and serving as <i><a class="pc" href="https://www.projectcodeuiuc.org">Project: Code</a></i>'s president.
         //                 </p>
         //             </div>
         //         </div>
@@ -83,8 +69,16 @@ export default function About() {
 
         //     <Navbar page="about"/>
         // </main>
-        <main className="flex h-screen items-center place-items-center antialiased">
-            <h1 className="text-subheader font-bold antialiased min-h-[49px]" id="greeting" onMouseEnter={() => chooseGreeting()}>Hi! 👋</h1>
+        <main className="flex h-screen place-items-center center-items antialiased">
+            <div className="flex flex-col h-fit justify-left w-full pl-[10%] pt-[10%]">
+                <i><h1 id="greeting" className="text-subheader antialiased" onMouseEnter={() => chooseGreeting()}><span>Hi! 👋</span></h1></i>
+                <p className="w-1/2 text-default antialiased"><br/>
+                    I'm <i>Anh Do</i>, a Computer Science student at the University of Illinois Urbana-Champaign. I like building <i><a class="things" href="/projects">things</a></i> and try to make them accessible and human-centered.
+                    <br/><br/>
+                    I'm currently doing research in the <i><a class="action" href="https://jessiechinlab.ischool.illinois.edu">ACTION Lab</a></i>, developing a mobile app for <i><a class="isd" href="https://www.illinoissolardecathlon.com">Illinois Solar Decathlon</a></i>, and serving as <i><a class="pc" href="https://www.projectcodeuiuc.org">Project: Code</a></i>'s president.
+                    <br/>                
+                </p>
+            </div>
         </main>
     );
 }
