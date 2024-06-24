@@ -8,10 +8,10 @@ import { useRouter } from 'next/navigation';
 export default function Navigation() {
     const router = useRouter()
     
-    router.prefetch('/about');
-    router.prefetch('/projects');
-    router.prefetch('/experience');
-    router.prefetch('/other');
+    // router.prefetch('/about');
+    // router.prefetch('/projects');
+    // router.prefetch('/experience');
+    // router.prefetch('/other');
     
     return(
         <main className="flex h-screen items-center place-items-center justify-center antialiased">

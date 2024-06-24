@@ -12,12 +12,11 @@ export default function Start() {
         return str.split(/(?= )/);
     }
     const router = useRouter()
-    router.prefetch('/about')
-    router.replace('/about')
+    // router.prefetch('/about')
+    // router.replace('/about')
 
     return(
         <main className="flex h-screen items-center place-items-center justify-center antialiased">
-            <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
             {/* Text block */}
             <div className = "flex flex-auto relative place-items-center flex-col items-center h-fit font-normal">
@@ -26,7 +25,7 @@ export default function Start() {
                     <Typewriter 
                         onInit={(typewriter) => {
                             typewriter
-                            .callFunction(() => { router.prefetch('/about'); })
+                            // .callFunction(() => { router.prefetch('/about'); })
                             .typeString('Hi,')
                             .pauseFor(500)
                             .typeString(' I\'m Anh Do')
