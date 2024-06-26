@@ -7,20 +7,23 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      'dialogue': '12px',
-      'subsm': '14px',
-      'sub': '16px',
-      'sublg': '18px',
-      'default': '22px',
-      'subheader': '40px',
-      'header': '56px',
+      xl : ['66px', '81px'],
+      lg : ['38px', '48px'],
+      md : ['28', '33px'],
+      sm : ['22', '26px']
+    },
+    fontWeight: {
+      normal : '450',
+      medium : '550',
+      bold : '700'
     },
     colors: {
-      'blue': '#9EDDF8',
-      'green': '#ADEC97',
-      'pink': '#FBC9DD',
-      'orange': '#FFD8AA',
-      'purple': '#E0CCFF',
+      'white' : '#FFFDF7',
+      'gray' : '#F9F7F1',
+      'black' : '#272528',
+      'blue' : '#083EB5',
+      'red' : '#E22403',
+      'yellow' : '#FFBE46'
     }
   },
   plugins: [],

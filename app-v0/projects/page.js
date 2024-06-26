@@ -6,7 +6,8 @@ import Navbar from "@/app/navbar";
 
 export default function Projects() {
     return(
-        <main class="h-[200%] w-fill bg-red snap-start">
+        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+            <Navbar page="projects"/>
         </main>
     );
 }

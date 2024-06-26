@@ -1,10 +1,10 @@
-import { Inter } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 import "../globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter_Tight({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Experience",
+  title: "Navigation",
   description: "Anh's website",
 };
 

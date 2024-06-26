@@ -4,9 +4,9 @@
 import { useState } from "react";
 import Navbar from "@/app/navbar";
 
-export default function Projects() {
+export default function Contact() {
     return(
-        <main class="h-[200%] w-fill bg-red snap-start">
+        <main class="h-[50%] w-fill bg-blue snap-start">
         </main>
     );
 }
