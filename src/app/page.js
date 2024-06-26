@@ -4,8 +4,6 @@ import React, { useRef } from "react";
 import Link from 'next/link';
 // import { useRouter } from 'next/navigation';
 
-// import Navbar from "@/app/navbar";
-// import Contents from "@/app/contents";
 import About from "@/app/about/page";
 import Projects from "@/app/projects/page";
 import Experience from "@/app/experience/page";

@@ -1,8 +1,5 @@
 'use client';
 
-// import Image from "next/Image"
-// import { useState } from "react";
-
 export default function AliceProject() {
     
     return(
