@@ -1,0 +1,48 @@
+{
+    "highlights": [
+      {
+        "title" : "WorkTime",
+        "description" : "A simple to-do list app with integrated time tracking. Built to make planning work time easier than ever.",
+        "caption" : "",
+        "link" : {
+            "text" : "",
+            "address" : ""
+        }
+      },
+      {
+        "title" : "Smart Home App",
+        "description" : "A mobile app for controlling and viewing smart home appliances.",
+        "caption" : "With",
+        "link" : {
+            "text" : "Illinois Solar Decathlon",
+            "address" : "https://www.illinoissolardecathlon.com"
+        }
+      },
+      {
+        "title" : "Scrape GUI",
+        "description" : "A GUI for PeopleWeave's scraper. Simple searching with fully customizable querying options.",
+        "caption" : "With",
+        "link" : {
+            "text" : "PeopleWeave",
+            "address" : "http://www.peopleweave.org/"
+        }
+      }
+    ],
+    "all": [
+        {
+            "title" : "WorkTime",
+            "description" : "A simple to-do list app with integrated time tracking. Built to make planning work time easier than ever.",
+            "caption" : ""
+        },
+        {
+            "title" : "Smart Home App",
+            "description" : "A mobile app for controlling and viewing smart home appliances.",
+            "caption" : "With Illinois Solar Decathlon"
+        },
+        {
+            "title" : "Scrape GUI",
+            "description" : "A GUI for PeopleWeave's scraper. Simple searching with fully customizable querying options.",
+            "caption" : "With PeopleWeave"
+        }
+    ]
+  }

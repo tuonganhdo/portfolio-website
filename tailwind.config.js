@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     fontSize: {
       xl : ['66px', '81px'],
-      lg : ['38px', '48px'],
-      md : ['28', '33px'],
-      sm : ['22', '26px']
+      large : ['38px', '48px'],
+      medium : ['26px', '34px'],
+      small : ['18px', '26px']
     },
     fontWeight: {
       normal : '450',
