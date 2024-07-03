@@ -4,13 +4,13 @@ import Link from 'next/link';
 
 // graphics
 import Image from 'next/image';
-import graphic1 from "../../../public/graphic1.svg"
-import graphic2 from "../../../public/graphic2.svg"
-import graphic3 from "../../../public/graphic3.svg"
-import triangle from "../../../public/triangle.svg"
+import graphic1 from "../../public/graphic1.svg"
+import graphic2 from "../../public/graphic2.svg"
+import graphic3 from "../../public/graphic3.svg"
+import triangle from "../../public/triangle.svg"
 
 // project descriptions
-import projects from "../../../public/projects.json"
+import projects from "../../public/projects.json"
 
 export default function Projects() {
     const { highlights, _ } = projects
@@ -22,8 +22,9 @@ export default function Projects() {
             <div class="w-[72.5%] h-fit grid grid-cols-2 grid-rows-3 gap-0">
                 {/* project tiles */}
                 { highlights.map((project, index) => (
-                    <div class={`w-fill aspect-square place-items-center p-[12%] ${colors[index]} ${tileOrder[index]}`}>
-                        <div class="relative flex flex-col w-fill aspect-square overflow-clip space-y-[8%]">
+                    <div key={`projecttile${index+1}`} id="project-tile" class={`relative w-fill aspect-square place-items-center ${colors[index]} ${tileOrder[index]}`}>
+                        <div id="bg" class="absolute w-[100%] aspect-square" />
+                        <div class="relative flex flex-col w-fill aspect-square overflow-clip space-y-[8%] m-[12%] bg-transparent">
                             <p class="text-xl font-bold text-white">{project['title']}</p>
                             <p class="text-medium font-normal text-white">{project['description']}</p>
                             <div class="flex flex-row">

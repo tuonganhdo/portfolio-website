@@ -5,10 +5,10 @@ import Link from 'next/link';
 import { useInView, InView } from "react-intersection-observer";
 // import { useRouter } from 'next/navigation';
 
-import About from "@/app/about/page";
-import Projects from "@/app/projects/page";
-import Experience from "@/app/experience/page";
-import Contact from "@/app/contact/page";
+import About from "@/app/about";
+import Projects from "@/app/projects";
+import Experience from "@/app/experience";
+import Contact from "@/app/contact";
 
 export default function Home() {
     // jump links + updating menu
@@ -57,8 +57,8 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* Corner menu */}\
-            <div id="menu" class="flex flex-col h-fit bg-transparent text-black fixed bottom-[7%] right-[5%] z-[100]">
+            {/* Corner menu */}
+            <div id="menu" class="flex flex-col h-fit text-black fixed bottom-[7%] right-[5%] z-[100]">
                 <div id="about" class="flex flex-row space-x-[7%] pr-[7%]">
                     <p id="arrow" class={`text-large font-bold text-blue ${ section ? 'visible' : 'invisible'}`}>⏵</p>
                     <button 

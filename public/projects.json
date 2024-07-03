@@ -43,6 +43,36 @@
             "title" : "Scrape GUI",
             "description" : "A GUI for PeopleWeave's scraper. Simple searching with fully customizable querying options.",
             "caption" : "With PeopleWeave"
+        },
+        {
+          "title" : "Playlistify",
+          "description" : "",
+          "caption" : ""
+        },
+        {
+          "title" : "NotionBot",
+          "description" : "",
+          "caption" : ""
+        },
+        {
+          "title" : "Trackal",
+          "description" : "",
+          "caption" : ""
+        },
+        {
+          "title" : "Scrap'd",
+          "description" : "",
+          "caption" : ""
+        },
+        {
+          "title" : "Mail To-do",
+          "description" : "",
+          "caption" : ""
+        },
+        {
+          "title" : "Study@Illinois",
+          "description" : "",
+          "caption" : ""
         }
     ]
   }

@@ -1,0 +1,25 @@
+{
+    "experience": [
+        {
+            "time" : "Feb 2024 - Present",
+            "title" : "Mobile App Developer",
+            "organization" : "Illinois Solar Decathlon",
+            "location" : "Champaign, IL",
+            "description" : "Designing and developing a mobile app for home automation and remote appliance and lighting control using OpenHAB"
+        },
+        {
+            "time" : "Jan 2024 - Present",
+            "title" : "Course Assistant",
+            "organization" : "Department of Mathematics, University of Illinois Urbana-Champain",
+            "location" : "Champaign, IL",
+            "description" : "Holding office hours and assisting students in labs for Linear Algebra (MATH 257)"
+        },
+        {
+            "time" : "Apr 2023 - Present",
+            "title" : "Undergraduate Research Assistant",
+            "organization" : "PeopleWeave, Caesar Lab, University of Illinois Urbana-Champaign",
+            "location" : "Champaign, IL",
+            "description" : "Building a LinkedIn scraper to find researcher information for author disambiguation. Developed a graphical user interface for retrieving research paper data from all scrapers."
+        }
+    ]
+}
